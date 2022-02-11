@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() 
+{
+   FILE *f;
+   int n,i;
+   char c;
+
+   f=fopen("raj.txt", "w");
+   c=fgetc(f);
+   while(c!=EOF)
+   {
+   printf("%c",c);
+      c=fgetc(f);
+}
+ fclose(f);
+    return 0;
+}
