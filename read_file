@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() 
+{
+   FILE *f;
+   int n,i;
+   char c;
+
+   f=fopen("raj.txt", "r");
+   printf("hell sir plz conceder my assigmments today bcoz i submited too late sir..\n");
+   c=fgetc(f);
+   printf("%c",c);
+      fclose(f);
+
+    return 0;
+}
